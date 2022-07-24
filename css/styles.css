@@ -103,16 +103,42 @@ body{
     
 }
 .envelope{
-    display: block;
+    display: inline-block;
+    margin-right: 10px;
+    background-size: cover;
     width: 16px;
     height: 12px;
+    fill:currentColor;
 }
+.smart{
+    display: inline-block;
+    width:10px;
+    height: 16px;
+    margin-right: 10px;
+    background-size: cover;
+    fill:currentColor;
+}
+.antenna{
+    width: 270px;
+    height:120px;
+    background: #f5f4fa;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .menu-contact{
     margin-left: auto;
 }
 .e-mail{
     margin-right: 50px;
 }
+.contact:hover,
+.contact:focus{
+    color:var(--accent-color);
+}
+.contact-menu .current,
 .contact:hover,
 .contact:focus{
     color:var(--accent-color);
@@ -242,8 +268,37 @@ body{
 .name-team{
     display: flex;
 }
-    
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height:44px;
+    border-radius: 50%;
+    background-color:#ffffff;
+}
+.social-list-icon {
+    fill:#AFB1B8;
+}
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color:var(--accent-color);
+}
 
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #ffffff;
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+   
 .name{
     font-style: normal;
     font-weight: 500;
@@ -266,6 +321,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color:#757575;
+    margin-bottom: 16px;
 }
 .iteam-bg:not(:last-child){
     margin-right: 30px;
@@ -276,6 +332,48 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.titel-clients{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.link-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.list-clients{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.clients{
+    padding-top:94px;
+    padding-bottom:94px;
+}
+.brand-link {
+    fill:#AFB1B8;
+}
+.link-clients:hover,
+.link-clients:focus{
+    border: 1px solid var(--accent-color);
+}
+.link-clients:hover .brand-link,
+.link-clients:focus .brand-link{
+    fill:var(--accent-color);
+}
+
 /*=======================/main================*/
 /*======================footer===============*/
 .whity{
@@ -321,6 +419,46 @@ body{
   .indent:not(:last-child){
     margin-bottom:9px;
   }
+  .link-social-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height:44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+  }
+  .icon-link-footer{
+    fill:#ffffff;
+  }
+  
+  .titel-social-footer{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.list-footer{
+    display: flex;
+}
+.colum-footer:first-child{
+    margin-right: 70px;
+}
+.list-social-footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+.link-social-footer:hover,
+.link-social-footer:focus{
+    background-color:var(--accent-color);
+}
+  
+  
 
 /*=================/footer============*/
 /*=================portfolio==========*/
@@ -409,6 +547,10 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
+}
+.beam:hover,
+.beam:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
